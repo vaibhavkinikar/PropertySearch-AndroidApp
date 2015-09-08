@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    
+    tools:context="com.kinikar.propsearchhw9.ResultActivity1" >
+<RelativeLayout android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/fb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:onClick="onClickFB"
+        android:src="@drawable/fshares" />
+
+    <TextView
+        android:id="@+id/moredetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignTop="@+id/fb"
+        android:text="See more details on zillow:" />
+
+    <TextView
+        android:id="@+id/link"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/fb"
+        android:text="2636 Menlo Ave, Los Angeles, CA-90007" />
+
+</RelativeLayout>
+        <ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+              
+              <TableLayout
+                  android:id="@+id/main_table1"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content">
+                   
+              </TableLayout>              
+          </LinearLayout>
+        </ScrollView>
+<ScrollView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+          <LinearLayout 
+              android:layout_width="fill_parent"
+              android:layout_height="wrap_content"
+              android:orientation="vertical" >
+        <TextView
+            android:id="@+id/disclaimer1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"            
+            android:textColor="#000000"
+            android:visibility="visible" 
+            android:layout_marginTop="28dp"
+            android:layout_gravity="center"/>
+
+        <TextView
+            android:id="@+id/disclaimer2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"           
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+        <TextView
+            android:id="@+id/disclaimer3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#000000"
+            android:visibility="visible"
+            android:layout_gravity="center" />
+        </LinearLayout>
+  </ScrollView>
+</LinearLayout>        
